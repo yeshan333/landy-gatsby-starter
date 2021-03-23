@@ -1,13 +1,14 @@
-import React, { lazy, Fragment } from "react";
+import React, { Fragment } from "react";
 import { Row, Col } from "antd";
 import i18n from "i18next";
 import { withTranslation } from "react-i18next";
+import Loadable from "@loadable/component"
 import Fade from "react-reveal/Fade";
 
 import * as S from "./styles";
 
-const SvgIcon = lazy(() => import("../../common/SvgIcon"));
-const Container = lazy(() => import("../../common/Container"));
+const SvgIcon = Loadable(() => import("../../common/SvgIcon"));
+const Container = Loadable(() => import("../../common/Container"));
 
 const Footer = ({ t }) => {
   const handleChange = (event) => {

@@ -1,4 +1,5 @@
-import React, { lazy } from "react";
+import React from "react";
+import Loadable from "@loadable/component"
 
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
@@ -7,11 +8,11 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 
-const ContactFrom = lazy(() => import("../ContactForm"));
-const ContentBlock = lazy(() => import("../ContentBlock"));
-const MiddleBlock = lazy(() => import("../MiddleBlock"));
-const Container = lazy(() => import("../../common/Container"));
-const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
+const ContactFrom = Loadable(() => import("../ContactForm"));
+const ContentBlock = Loadable(() => import("../ContentBlock"));
+const MiddleBlock = Loadable(() => import("../MiddleBlock"));
+const Container = Loadable(() => import("../../common/Container"));
+const ScrollToTop = Loadable(() => import("../../common/ScrollToTop"));
 
 const Home = () => {
   return (

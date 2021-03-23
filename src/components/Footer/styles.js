@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 
 export const Footer = styled.footer`
   background: rgb(249, 250, 252);

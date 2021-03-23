@@ -1,6 +1,7 @@
-import React, { lazy } from "react";
+import React from "react";
 import { Row, Col } from "antd";
 import Zoom from "react-reveal/Zoom";
+import Loadable from "@loadable/component"
 import { withTranslation } from "react-i18next";
 
 import useForm from "./useForm";
@@ -8,10 +9,10 @@ import validate from "./validationRules";
 
 import * as S from "./styles";
 
-const Block = lazy(() => import("../Block"));
-const Input = lazy(() => import("../../common/Input"));
-const Button = lazy(() => import("../../common/Button"));
-const TextArea = lazy(() => import("../../common/TextArea"));
+const Block = Loadable(() => import("../Block"));
+const Input = Loadable(() => import("../../common/Input"));
+const Button = Loadable(() => import("../../common/Button"));
+const TextArea = Loadable(() => import("../../common/TextArea"));
 
 const Contact = ({ title, content, id, t }) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);

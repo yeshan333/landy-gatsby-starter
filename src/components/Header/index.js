@@ -1,14 +1,14 @@
-import React, { useState, Fragment, lazy } from "react";
+import React, { useState, Fragment } from "react";
+import Loadable from "@loadable/component"
 import { Row, Col, Drawer } from "antd";
 import { CSSTransition } from "react-transition-group";
 import { withTranslation } from "react-i18next";
-import { Helmet } from "react-helmet";
 
 import Head from './Head';
 import * as S from "./styles";
 
-const SvgIcon = lazy(() => import("../../common/SvgIcon"));
-const Button = lazy(() => import("../../common/Button"));
+const SvgIcon = Loadable(() => import("../../common/SvgIcon"));
+const Button = Loadable(() => import("../../common/Button"));
 
 const Header = ({ t }) => {
   const [isNavVisible] = useState(false);
