@@ -1,0 +1,59 @@
+{
+  "name": "gatsby-landy-starter",
+  "version": "0.1.0",
+  "license" : "MIT",
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "react",
+    "landy",
+    "landing page"
+  ],
+  "description": "Landy is a free React landing page template designed for developers and startups.",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.1",
+    "antd": "^4.13.1",
+    "axios": "^0.21.1",
+    "gatsby": "^3.0.1",
+    "gatsby-plugin-react-helmet": "^4.1.0",
+    "i18next": "^19.9.1",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-xhr-backend": "^3.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.8.9",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-transition-group": "^4.4.1",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/yeshan333/landy-gatsby-starter"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
