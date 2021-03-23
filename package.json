@@ -1,7 +1,7 @@
 {
   "name": "gatsby-landy-starter",
   "version": "0.1.0",
-  "license" : "MIT",
+  "license": "MIT",
   "keywords": [
     "gatsby",
     "gatsby-starter",
@@ -41,8 +41,8 @@
     "clean": "gatsby clean"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/yeshan333/landy-gatsby-starter"
+    "type": "git",
+    "url": "https://github.com/yeshan333/landy-gatsby-starter"
   },
   "browserslist": {
     "production": [
