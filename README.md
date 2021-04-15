@@ -10,3 +10,17 @@
 ## gatsby-landy-starter
 
 [Landy](https://landy.website/) is a free React landing page template designed for developers and startups, created by [Adrinlol](https://github.com/). This is a starter based on Gatsby and Landy. It inherits all of Landy's features.
+
+## quick start
+
+```shell
+npm install -g gatsby-cli
+
+gatsby new landy-website https://github.com/yeshan333/landy-gatsby-starter
+
+cd landy-website
+
+gatsby develop
+```
+
+
